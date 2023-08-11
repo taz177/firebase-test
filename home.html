@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Home</title>
+        <!--Firebase-->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+       <!--JavaScript-->
+        <script src="firebase.js"></script>
+    </head>
+    <body>
+        <h2>Welcome home</h2>
+        <p>Click here to view your current ID:</p>
+        <input type="button" value="show current ID" id="readNewID" onclick="readCurrentID()">
+        <p id="userIDretrieved"></p>
+
+        <hr>
+        <p>You can update your any field in the database.<br>Please enter your new name:</p>
+        <input type="text" id="newName" name="newName">
+        <input type="submit" id="submitNewName" onclick="submitNewName()">
+
+
+    </body>
+</HTML>
